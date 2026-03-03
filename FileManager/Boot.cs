@@ -111,9 +111,11 @@ namespace FileManager
         public byte MediaDescriptor { get; set; }//
 
         public byte NumberOfCopiesOfFAT { get; set; }
-
-
-
-
+        public int SizeOfReserve { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public byte NumOfFatCopy { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int SizeOfFatCopy { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int BeginOfRoot { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public byte BackupBootSector { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string VolumeNameOfPartition { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     }
 }

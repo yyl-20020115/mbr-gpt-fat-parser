@@ -152,6 +152,11 @@ namespace FileManager
             set { numSectorsInPartition = value; }
         }
 
-
+        int IBootable.SizeOfReserve { get => SizeOfReserve; set => SizeOfReserve = value; }
+        byte IBootable.NumOfFatCopy { get => NumOfFatCopy; set => NumOfFatCopy = value; }
+        int IBootable.SizeOfFatCopy { get => SizeOfFatCopy; set => SizeOfFatCopy = value; }
+        public int BeginOfRoot { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public byte BackupBootSector { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        string IBootable.VolumeNameOfPartition { get => VolumeNameOfPartition; set => VolumeNameOfPartition = value; }
     }//~class
 }
