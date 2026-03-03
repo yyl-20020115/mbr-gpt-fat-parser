@@ -4,3 +4,7 @@ C:\Users\HW\documents\visual studio 2013\Projects\FileManager\FileManager\bin\Re
 C:\Users\HW\documents\visual studio 2013\Projects\FileManager\FileManager\obj\Release\FileManager.csprojResolveAssemblyReference.cache
 C:\Users\HW\documents\visual studio 2013\Projects\FileManager\FileManager\obj\Release\FileManager.exe
 C:\Users\HW\documents\visual studio 2013\Projects\FileManager\FileManager\obj\Release\FileManager.pdb
+D:\Working\mbr-gpt-fat-parser\FileManager\obj\Release\FileManager.csproj.AssemblyReference.cache
+D:\Working\mbr-gpt-fat-parser\FileManager\obj\Release\FileManager.csproj.CoreCompileInputs.cache
+D:\Working\mbr-gpt-fat-parser\FileManager\obj\Release\FileManager.exe
+D:\Working\mbr-gpt-fat-parser\FileManager\obj\Release\FileManager.pdb

@@ -4,3 +4,10 @@ C:\Users\HW\documents\visual studio 2013\Projects\FileManager\FileManager\bin\De
 C:\Users\HW\documents\visual studio 2013\Projects\FileManager\FileManager\bin\Debug\FileManager.pdb
 C:\Users\HW\documents\visual studio 2013\Projects\FileManager\FileManager\obj\Debug\FileManager.exe
 C:\Users\HW\documents\visual studio 2013\Projects\FileManager\FileManager\obj\Debug\FileManager.pdb
+D:\Working\mbr-gpt-fat-parser\FileManager\bin\Debug\FileManager.exe.config
+D:\Working\mbr-gpt-fat-parser\FileManager\bin\Debug\FileManager.exe
+D:\Working\mbr-gpt-fat-parser\FileManager\bin\Debug\FileManager.pdb
+D:\Working\mbr-gpt-fat-parser\FileManager\obj\Debug\FileManager.csproj.AssemblyReference.cache
+D:\Working\mbr-gpt-fat-parser\FileManager\obj\Debug\FileManager.csproj.CoreCompileInputs.cache
+D:\Working\mbr-gpt-fat-parser\FileManager\obj\Debug\FileManager.exe
+D:\Working\mbr-gpt-fat-parser\FileManager\obj\Debug\FileManager.pdb

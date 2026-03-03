@@ -11,7 +11,7 @@
     <AssemblyName>FileManager</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-	<LangVersion>Preview</LangVersion>
+    <LangVersion>Preview</LangVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -52,6 +52,7 @@
     <Compile Include="MBRSection.cs" />
     <Compile Include="PhysicalDrive.cs" />
     <Compile Include="ISection.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Volume.cs" />
     <Compile Include="VolumeBootSector.cs" />
     <Compile Include="VolumeNotFoundException.cs" />

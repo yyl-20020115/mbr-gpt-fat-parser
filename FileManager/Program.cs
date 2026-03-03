@@ -1,22 +1,26 @@
 ﻿using System;
 
-namespace FileManager
+namespace FileManager;
+
+internal static class Program
 {
-    internal static class Program
+    static void Main(string[] args)
     {
-        static void Main()
-        {
-            PhysicalDrive pd = new PhysicalDrive(@"\\.\PhysicalDrive0");
-
-            for (int i = 0; i < pd.Length; i++)
-            {
-                Console.WriteLine(pd[i].ToString());
-            }
-
-
-
-
-            Console.ReadKey();
+        if(args.Length==0)        {
+            Console.WriteLine("Usage: FileManager.exe <PhysicalDriveName>");
+            Console.WriteLine("Example: FileManager.exe \\\\.\\PhysicalDrive0");
+            return;
         }
+        var pd = new PhysicalDrive(args[0]);
+
+        for (int i = 0; i < pd.Length; i++)
+        {
+            Console.WriteLine(pd[i].ToString());
+        }
+
+
+
+
+        Console.ReadKey();
     }
 }
