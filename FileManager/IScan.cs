@@ -4,22 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileManager
+namespace FileManager;
+
+interface IScan
 {
-    interface IScan
+    int Length
     {
-        int Length
-        {
-            get;
-        }
-
-        //Indexer return address of begining for every logical volume
-        ISection this[int index]
-        {
-            get;
-        }
-
-        bool Scan(string physicalDriveName);
-
+        get;
     }
+
+    //Indexer return address of begining for every logical volume
+    ISection this[int index]
+    {
+        get;
+    }
+
+    bool Scan(string physicalDriveName);
+
 }

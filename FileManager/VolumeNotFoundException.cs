@@ -4,16 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileManager
+namespace FileManager;
+
+class VolumeNotFoundException : ApplicationException
 {
-    class VolumeNotFoundException : ApplicationException
-    {
-        public VolumeNotFoundException() { }
+    public VolumeNotFoundException() { }
 
-        public VolumeNotFoundException(string massage) : base(massage) { }
+    public VolumeNotFoundException(string massage) : base(massage) { }
 
-        public VolumeNotFoundException(string massage, Exception inner) : base(massage, inner) { }
+    public VolumeNotFoundException(string massage, Exception inner) : base(massage, inner) { }
 
-        
-    }
+    
 }

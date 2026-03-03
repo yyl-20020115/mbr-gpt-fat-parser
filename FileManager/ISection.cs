@@ -4,37 +4,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FileManager
+namespace FileManager;
+
+interface ISection
 {
-    interface ISection
+
+    ulong getFirstSector();//common
+
+    ulong getSize();//common
+
+    //MBR
+    byte getFileSystemType();
+
+    bool isBootable
     {
-
-        ulong getFirstSector();//common
-
-        ulong getSize();//common
-
-        //MBR
-        byte getFileSystemType();
-
-        bool isBootable
-        {
-            get;
-        }
-
-        void setFirstSector(uint first_sector);
-        
-        //-------------------------------MBR
-      
-        //GPT
-        long getAttributes();
-
-        string getPartitionName();//common *in mbr 'type' will be transform in string
-
-        Guid getPartitionTypeGuid();
-
-        Guid getUniquePartitionGuid();
-
-        //-------------------------------GPT
-        
+        get;
     }
+
+    void setFirstSector(uint first_sector);
+    
+    //-------------------------------MBR
+  
+    //GPT
+    long getAttributes();
+
+    string getPartitionName();//common *in mbr 'type' will be transform in string
+
+    Guid getPartitionTypeGuid();
+
+    Guid getUniquePartitionGuid();
+
+    //-------------------------------GPT
+    
 }
