@@ -11,9 +11,6 @@ class PhysicalDrive
     string name;
     IScan Scanner;
     List<Volume> volumes = [];
-    //ISystemic
-    //тип сенгментації
-
     //-------------------------------------------------------Constructor(string)------------------
     public PhysicalDrive(string driveName)
     {
@@ -50,7 +47,7 @@ class PhysicalDrive
         }
         foreach (var partition in partitions)
         {
-            using var stream = new FileStream(partition.Item3 + ".bin", FileMode.Create, FileAccess.Write);
+            using var stream = new FileStream(partition.Item3 + ".img", FileMode.Create, FileAccess.Write);
             WinApi.SetFilePointer(shFile, partition.Item1, out var high, 0);
             for (uint i = 0; i < partition.Item2; i += SectorSize)
             {
@@ -59,14 +56,9 @@ class PhysicalDrive
             }
         }
 
-
-
-
         if (false)
         {
-
-            //---------------------------------------------------
-            MBR protectiveMbr = new MBR(buff);
+            var protectiveMbr = new MBR(buff);
 
             if (protectiveMbr.isProtective())
             {
